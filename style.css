@@ -25,6 +25,13 @@ body {
     padding-bottom: 30px;
 }
 
+.button-section {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding-bottom: 100px;
+}
+
 .new-book-button {
     height: 50px;
     width: 75%;
@@ -33,9 +40,11 @@ body {
 
 fieldset {
     border: 2px solid darkgrey;
+    display: none;
+    margin-bottom: 150px;
 }
 
-label {
+label, fieldset > span {
     color: white;
 }
 
@@ -49,10 +58,23 @@ label {
     border: 2px solid darkgrey;
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: auto;
 }
 
 .book-card {
     height: 175px;
     width: 230px;
     border: 2px solid rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 0;
+}
+
+.delete-button {
+    margin-left: auto;
+    margin-right: 10px;
 }
