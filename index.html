@@ -9,30 +9,41 @@
 <body>
 <div class="display-area">
     <div class="sidebar">
-        <button class="new-book-button">NEW BOOK</button>
+        <div class="button-section">
+            <button class="new-book-button">NEW BOOK</button>
+        </div>
         <div class="new-book-form">
-            <form action="" method="POST">
-                <fieldset>
+            <form action="" method="POST" id="book-form-check">
+                <fieldset id="book-form">
                     <label for="title">Title:</label><br>
-                    <input type="text" id="title" name="title"><br>
+                    <input type="text" name="title" id="title" required><br>
                     <label for="author">Author:</label><br>
-                    <input type="text" id="author" name="author"><br>
+                    <input type="text" name="author" id="author" required><br>
                     <label for="pages">Pages:</label><br>
-                    <input type="number" id="pages" name="pages"><br>
-                    <label for="read-status">Read?</label>
-                    <input type="checkbox" id="read-status" name="read-status"><br>
-                    <button type="submit">ADD BOOK</button>
+                    <input type="number" name="pages" id="pages" required><br>
+                    <span>Read?</span> &nbsp &nbsp &nbsp &nbsp
+                    <label for="read-status-yes">Yes</label>
+                    <input type="radio" name="read-status" id="read-status-yes" required>
+                    <label for="read-status-no">No</label>
+                    <input type="radio" name="read-status" id="read-status-no" required><br>
+                    <button class="add-book-button">ADD BOOK</button>
                 </fieldset>
             </form>
         </div>
     </div>
     <div class="card-display-area">
-        <div class="book-card"></div>
-        <div class="book-card"></div>
-        <div class="book-card"></div>
-        <div class="book-card"></div>
-        <div class="book-card"></div>
-        <div class="book-card"></div>
+        <!-- <div class="book-card">
+            <button class="delete-button">X</button>
+            <span class="book-card-title">TITLE</span>
+            <span class="book-card-author">AUTHOR</span>
+            <div class="book-card-pages">
+                <span class="book-card-pages">324</span>&nbsp<span>pages</span>
+            </div>
+            <div class="book-card-read-status">
+                <span>Read?</span> &nbsp &nbsp &nbsp
+                <button class="book-card-read-button">YES</button>
+            </div>
+        </div> -->
     </div>
 </div>
 <script src="library.js"></script>
